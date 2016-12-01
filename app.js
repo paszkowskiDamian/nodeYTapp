@@ -5,6 +5,8 @@ const http = require('http');
 
 var myReadStream = fs.createReadStream(__dirname + "/readme.txt",'utf-8');
 
+cosnole.log("hello");
+
 myReadStream.on('data', (chunk)=>{
     console.log('new chonk recived');
     console.log(chunk);
